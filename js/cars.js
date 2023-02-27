@@ -9,6 +9,9 @@ export default class {
     }
 
     update() {
-        let lane = this.intersectionHandler.findIntersection(this.x, this.y)
+        let lane = this.intersectionHandler.findIntersection(this.x, this.y)[this.direction]
+        
+        if (lane[0] === this) {
+        }
     }
 }
